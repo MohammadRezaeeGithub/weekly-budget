@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-primary">
+
+<div class="row justify-content-center">
+    <h1 class="text-center m-5">weekly buget</h1>
+</div>
+
+    <div class="row justify-content-center">
+            <div class="card col-8">
+                <div class="card-body">
+                    <div class="row" id="insertbefore">
+                        <div class="col-6">
+                            <form id="expense-form" action="">
+                                <div class="mb-3">
+                                  <label for="exampleInputEmail1" class="form-label">Expense</label>
+                                  <input type="text" class="form-control" id="expense">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="exampleInputPassword1" class="form-label">Amount</label>
+                                  <input type="text" class="form-control" id="amount" >
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </form>
+                        </div>
+                        <div class="col-6">
+                            <h4>The expneses for this week:</h4>
+                            <ul class="list-group" id="expenses">
+                                <!-- <li class="list-group-item">An item<span class="badge bg-primary float-end">Primary</span></li> -->
+                            </ul>
+                            <div class="alert alert-primary mt-3 text-center" role="alert">
+                                The buget for this week: <span id="total"></span>
+                            </div>
+                            <div class="alert alert-success text-center" role="alert">
+                                The left buget for this week: <span id="left"></span>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
